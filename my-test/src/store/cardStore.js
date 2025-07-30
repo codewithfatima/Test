@@ -48,8 +48,8 @@ export const useCartStore = create((set, get) => ({
   },
 
 
-  removeFromCart: (id) => set((state) => ({
-    cards: state.carts.filter((card) => card.id !== id),
+  removeFromCards: (id) => set((state) => ({
+    cards: state.cards.filter((card) => card.id !== id),
   })),
   removeFromCart: (id) => set((state) => ({
     cart: state.cart.filter((item) => item.id !== id),

@@ -18,10 +18,9 @@ const ProductList = ({ products }) => {
         img: ''
     });
     const {
-        carts,
         cards,
         addToCart,
-        removeFromCart,
+        removeFromCards,
         handleEdit,
         selectedProduct,
         openEditModal,
@@ -105,7 +104,7 @@ const ProductList = ({ products }) => {
                                 <button
                                     className='flex items-center hover:bg-gray-100 w-full gap-4 cursor-pointer px-3 py-1'
                                     onClick={() => {
-                                        removeFromCart(product.id);
+                                        removeFromCards(product.id);
                                         setShowMenu(null);
                                     }}
                                 >
